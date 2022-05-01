@@ -54,14 +54,12 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setup() {
 
-        title = "Iniciar sesión"
-
         logInButton.setOnClickListener {
             if (login_email.text.isNotEmpty() && login_pass.text.isNotEmpty()) {
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(login_email.text.toString(),
                     login_pass.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        Toast.makeText(this@LoginActivity,"Has iniciado sesión correctamente",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@LoginActivity,(R.string.successfulLogIn),Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this, AllAppActivity::class.java))
                     }else {
                         showAlert()
@@ -74,9 +72,9 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Error")
-        builder.setMessage("Se ha introducido el correo electrónico o la contraseña de manera incorrecta")
-        builder.setPositiveButton("Aceptar", null)
+        builder.setTitle(R.string.error)
+        builder.setMessage(R.string.wrongEmailPass)
+        builder.setPositiveButton(R.string.accept, null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }

@@ -34,7 +34,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Calculadora de porcentaje de grasa corporal:"
+                    android:text="@string/fatCalculator"
                     android:textColor="@color/darkBlueTriland"
                     android:textStyle="bold"/>
 
@@ -52,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Sexo:"
+                    android:text="@string/gender"
                     android:textSize="16dp"
                     android:textColor="@color/darkBlueTriland"
                     android:layout_marginRight="103dp"/>
@@ -69,7 +69,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Mujer"
+                        android:text="@string/female"
                         android:textColor="@color/darkBlueTriland"
                         android:textSize="14dp"
                         android:buttonTint="@color/darkBlueTriland" />
@@ -79,7 +79,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Hombre"
+                        android:text="@string/male"
                         android:textColor="@color/darkBlueTriland"
                         android:buttonTint="@color/darkBlueTriland"/>
                 </RadioGroup>
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="center"
-                    android:text="Peso (en Kg):"
+                    android:text="@string/weightKG"
                     android:textColor="@color/darkBlueTriland"
                     android:textSize="14dp"
                     android:layout_marginRight="51dp"/>
@@ -109,7 +109,7 @@
                     android:background="@drawable/custom_input_white"
                     android:ems="10"
                     android:gravity="center"
-                    android:hint="Peso"
+                    android:hint="@string/weight"
                     android:inputType="numberDecimal"
                     android:textColor="@color/darkBlueTriland"
                     android:textColorHint="@color/darkBlueTriland" />
@@ -124,7 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="Altura (en cm):"
+                    android:text="@string/heightCM"
                     android:textColor="@color/darkBlueTriland"
                     android:textSize="14dp"
                     android:layout_marginRight="43dp"/>
@@ -137,7 +137,7 @@
                     android:background="@drawable/custom_input_white"
                     android:ems="10"
                     android:gravity="center"
-                    android:hint="Altura"
+                    android:hint="@string/height"
                     android:inputType="numberDecimal"
                     android:textColor="@color/darkBlueTriland"
                     android:textColorHint="@color/darkBlueTriland" />
@@ -152,7 +152,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="Edad:"
+                    android:text="@string/ageTV"
                     android:textColor="@color/darkBlueTriland"
                     android:textSize="14dp"
                     android:layout_marginRight="100dp"/>
@@ -165,7 +165,7 @@
                     android:background="@drawable/custom_input_white"
                     android:ems="2"
                     android:gravity="center"
-                    android:hint="Edad"
+                    android:hint="@string/age"
                     android:inputType="number"
                     android:textColor="@color/darkBlueTriland"
                     android:textColorHint="@color/darkBlueTriland" />
@@ -184,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="IMC:"
+                    android:text="@string/imcTV"
                     android:textColor="@color/darkBlueTriland"
                     android:textSize="14dp"
                     android:layout_marginBottom="10dp"/>
@@ -219,7 +219,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:text="Grasa corporal: "
+                    android:text="@string/fat"
                     android:textColor="@color/darkBlueTriland"
                     android:textSize="14dp" />
 
@@ -243,7 +243,7 @@
                 android:backgroundTint="@color/darkBlueTriland"
                 android:drawableLeft="@drawable/ic_calculate"
                 android:drawableTint="@color/silverTriland"
-                android:text="Calcular"
+                android:text="@string/calculate"
                 android:textColor="@color/silverTriland" />
 
             <Button
@@ -253,7 +253,7 @@
                 android:backgroundTint="@color/darkBlueTriland"
                 android:drawableLeft="@drawable/ic_replay"
                 android:drawableTint="@color/silverTriland"
-                android:text="Limpiar"
+                android:text="@string/clear"
                 android:textColor="@color/silverTriland"
                 android:visibility="gone" />
         </LinearLayout>

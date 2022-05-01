@@ -26,7 +26,7 @@
                 android:drawableLeft="@drawable/ic_sports"
                 android:drawableTint="@color/darkBlueTriland"
                 android:hapticFeedbackEnabled="false"
-                android:text="Entrenamiento"
+                android:text="@string/train"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -39,7 +39,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_library"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Actualización diaria"
+                android:text="@string/daily"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -52,7 +52,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_login"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Darse de alta"
+                android:text="@string/membership"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -65,7 +65,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_map"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Instalaciones"
+                android:text="@string/facilities"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -78,7 +78,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_qr"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Lector QR"
+                android:text="@string/qr"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -91,7 +91,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_shopping"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Tienda"
+                android:text="@string/shop"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -104,7 +104,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_star"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Ranking"
+                android:text="@string/ranking"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -117,7 +117,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_calculate"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Calculadora"
+                android:text="@string/calculator"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -130,7 +130,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_watch"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Cronómetro"
+                android:text="@string/chronometer"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -143,7 +143,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_person"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Mi perfil"
+                android:text="@string/profile"
                 android:textColor="@color/darkBlueTriland" />
 
         </LinearLayout>

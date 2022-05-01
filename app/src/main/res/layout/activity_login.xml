@@ -35,7 +35,7 @@
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="12dp"
             android:drawableTint="@color/silverTriland"
-            android:hint="Usuario"
+            android:hint="@string/user"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:paddingLeft="10dp"
@@ -56,7 +56,7 @@
             android:drawableStart="@drawable/ic_lock"
             android:drawablePadding="12dp"
             android:drawableTint="@color/silverTriland"
-            android:hint="Contraseña"
+            android:hint="@string/pass"
             android:inputType="textPassword"
             android:maxLines="1"
             android:paddingLeft="10dp"
@@ -75,7 +75,7 @@
             android:layout_marginRight="80dp"
             android:foreground="?attr/selectableItemBackground"
             android:gravity="right"
-            android:text="¿Has olvidado tu contraseña?"
+            android:text="@string/forgotPassLogIn"
             android:textColor="@color/silverTriland" />
 
         <Button
@@ -91,7 +91,7 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:text="Acceder"
+            android:text="@string/logIn"
             android:textColor="@color/silverTriland"
             android:textColorHighlight="@color/darkSilverTriland" />
 
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="¿No tienes una cuenta?"
+                android:text="@string/haveAccount"
                 android:textColor="@color/silverTriland" />
 
             <TextView
@@ -116,7 +116,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="5dp"
                 android:foreground="?attr/selectableItemBackground"
-                android:text="Crea una"
+                android:text="@string/makeOne"
                 android:textColor="@color/silverTriland"
                 android:textStyle="bold" />
 

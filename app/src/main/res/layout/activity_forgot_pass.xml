@@ -33,7 +33,7 @@
             android:layout_marginRight="60dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:text="Introduce tu correo electronico para recibir la nueva contraseña"
+            android:text="@string/forgotPass"
             android:textColor="@color/silverTriland" />
 
         <EditText
@@ -47,7 +47,7 @@
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="12dp"
             android:drawableTint="@color/silverTriland"
-            android:hint="Introduce tu correo"
+            android:hint="@string/emailET"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:paddingLeft="10dp"
@@ -72,7 +72,7 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:text="Enviar"
+            android:text="@string/send"
             android:textColor="@color/silverTriland"
             android:textColorHighlight="@color/darkSilverTriland" />
 
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="¿Recuerdas tu contraseña?"
+                android:text="@string/rememberPass"
                 android:textColor="@color/silverTriland" />
 
             <TextView
@@ -97,7 +97,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="5dp"
                 android:foreground="?attr/selectableItemBackground"
-                android:text="Inicia sesión"
+                android:text="@string/logInTV"
                 android:textColor="@color/silverTriland"
                 android:textStyle="bold" />
 

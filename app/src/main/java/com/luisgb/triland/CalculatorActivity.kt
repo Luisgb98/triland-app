@@ -13,6 +13,11 @@ class CalculatorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
 
+        val lowWeight: String = getString(R.string.lowWeight)
+        val healthy: String = getString(R.string.healthy)
+        val overWeight: String = getString(R.string.overWeight)
+        val obesity: String = getString(R.string.obesity)
+
         calculatorButton.setOnClickListener {
 
             // Check if the height EditText and Weight EditText are not empty
@@ -33,13 +38,13 @@ class CalculatorActivity : AppCompatActivity() {
 
                 // update the status text as per the bmi conditions
                 if (BMI < 18.5) {
-                    statusTV.text = "Bajo peso"
+                    statusTV.text = lowWeight
                 } else if (BMI >= 18.5 && BMI < 24.9) {
-                    statusTV.text = "Saludable"
+                    statusTV.text = healthy
                 } else if (BMI >= 24.9 && BMI < 29.9) {
-                    statusTV.text = "Sobrepeso"
+                    statusTV.text = overWeight
                 } else if (BMI >= 29.9) {
-                    statusTV.text = "Obesidad"
+                    statusTV.text = obesity
                 }
 
                 BMITVResult.visibility = View.VISIBLE
@@ -54,7 +59,7 @@ class CalculatorActivity : AppCompatActivity() {
             // height EditText have null value
             // we will display toast.
             else {
-                Toast.makeText(this, "Por favor, introduce bien los datos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, (R.string.insertData), Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -97,7 +102,7 @@ class CalculatorActivity : AppCompatActivity() {
         var BF = 0.0
 
         if (genderRG.checkedRadioButtonId == -1) {
-            Toast.makeText(this, "Por favor, elige tu género", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, (R.string.setGender), Toast.LENGTH_SHORT).show()
         }else if (womanRB.isChecked){
             BF = (1.2 * BMI) + (0.23 * age) - 5.4
         }else if (manRB.isChecked){

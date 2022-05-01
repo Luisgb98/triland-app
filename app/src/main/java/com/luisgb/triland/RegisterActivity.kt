@@ -30,15 +30,13 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun setup() {
 
-        title = "Autentificación"
-
         registerButton.setOnClickListener {
             if (register_email.text.isNotEmpty() && register_pass.text.isNotEmpty()) {
 
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(register_email.text.toString(),
                 register_pass.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        Toast.makeText(this@RegisterActivity,"Te has registrado correctamente",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@RegisterActivity,(R.string.registerSuccessful),Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this, AllAppActivity::class.java))
                     }else {
                         showAlert()
@@ -58,9 +56,9 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Error")
-        builder.setMessage("Introduce todos los datos correctamente")
-        builder.setPositiveButton("Aceptar", null)
+        builder.setTitle(R.string.error)
+        builder.setMessage(R.string.enterDataCorrect)
+        builder.setPositiveButton(R.string.accept, null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }

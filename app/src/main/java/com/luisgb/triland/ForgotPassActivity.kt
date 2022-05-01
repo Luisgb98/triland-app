@@ -22,11 +22,11 @@ class ForgotPassActivity : AppCompatActivity() {
 
                 val email: String = forgotpass_email.text.toString().trim() { it <= ' ' }
                 if (email.isEmpty()) {
-                    Toast.makeText(this@ForgotPassActivity, "Por favor, introduce tu correo electrónico", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ForgotPassActivity, (R.string.setEmailOnForgot), Toast.LENGTH_SHORT).show()
                 }else{
                     FirebaseAuth.getInstance().sendPasswordResetEmail(email).addOnCompleteListener{task ->
                         if (task.isSuccessful) {
-                            Toast.makeText(this@ForgotPassActivity, "Se ha enviado un correo electrónico para restablecer la contraseña", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@ForgotPassActivity, (R.string.sendEmailonForgot), Toast.LENGTH_SHORT).show()
 
                             //Volvemos al LoginActivity
                             finish()

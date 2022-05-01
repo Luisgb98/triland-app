@@ -36,8 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nuestras instalaciones se encuentran en
-la calle de la Morona en Morón de la Frontera."
+                    android:text="@string/facilitiesTV"
                     android:textSize="14dp"
                     android:textColor="@color/darkBlueTriland"
                     android:gravity="center"/>
@@ -58,7 +57,7 @@ la calle de la Morona en Morón de la Frontera."
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Zona de entrenamiento personal"
+                    android:text="@string/personalTrain"
                     android:textSize="14dp"
                     android:textColor="@color/darkBlueTriland"
                     android:gravity="center"
@@ -162,7 +161,7 @@ la calle de la Morona en Morón de la Frontera."
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Zona de entrenamiento libre"
+                    android:text="@string/freeTrain"
                     android:textSize="14dp"
                     android:textColor="@color/darkBlueTriland"
                     android:gravity="center"

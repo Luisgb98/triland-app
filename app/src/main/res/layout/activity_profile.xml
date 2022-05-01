@@ -29,7 +29,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_text"
                 android:gravity="center"
-                android:text="Correo electrónico"
+                android:text="@string/email"
                 android:textColor="@color/silverTriland"
                 android:textSize="14dp"/>
 
@@ -40,7 +40,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_input_white"
                 android:gravity="center"
-                android:text="Nombre"
+                android:text="@string/name"
                 android:textColor="@color/darkBlueTriland"
                 android:textSize="14dp"/>
 
@@ -51,7 +51,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_input"
                 android:gravity="center"
-                android:hint="Nombre"
+                android:hint="@string/name"
                 android:textColor="@color/silverTriland"
                 android:textColorHint="@color/silverTriland"
                 android:visibility="gone"
@@ -64,7 +64,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_input_white"
                 android:gravity="center"
-                android:text="Apellidos"
+                android:text="@string/surname"
                 android:textColor="@color/darkBlueTriland"
                 android:textSize="14dp"/>
 
@@ -75,7 +75,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_input"
                 android:gravity="center"
-                android:hint="Apellidos"
+                android:hint="@string/surname"
                 android:textColor="@color/silverTriland"
                 android:textColorHint="@color/silverTriland"
                 android:visibility="gone"
@@ -88,7 +88,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_input_white"
                 android:gravity="center"
-                android:text="Dirección"
+                android:text="@string/adress"
                 android:textColor="@color/darkBlueTriland"
                 android:textSize="14dp"/>
 
@@ -99,7 +99,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_input"
                 android:gravity="center"
-                android:hint="Dirección"
+                android:hint="@string/adress"
                 android:textColor="@color/silverTriland"
                 android:textColorHint="@color/silverTriland"
                 android:visibility="gone"
@@ -111,7 +111,7 @@
                 android:layout_height="30dp"
                 android:background="@drawable/custom_input_white"
                 android:gravity="center"
-                android:text="Teléfono"
+                android:text="@string/phone"
                 android:textColor="@color/darkBlueTriland"
                 android:textSize="14dp"/>
 
@@ -121,7 +121,7 @@
                 android:layout_height="30dp"
                 android:background="@drawable/custom_input"
                 android:gravity="center"
-                android:hint="Teléfono"
+                android:hint="@string/phone"
                 android:textColor="@color/silverTriland"
                 android:textColorHint="@color/silverTriland"
                 android:visibility="gone"
@@ -143,7 +143,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_edit"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Cambiar datos"
+                android:text="@string/changeData"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -154,7 +154,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_save"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Guardar"
+                android:text="@string/save"
                 android:textColor="@color/darkBlueTriland"
                 android:visibility="gone" />
 
@@ -166,7 +166,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_logout"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="Cerrar sesión"
+                android:text="@string/logOut"
                 android:textColor="@color/darkBlueTriland" />
         </LinearLayout>
 

@@ -23,7 +23,7 @@ class QRActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qractivity)
         val scannerView = findViewById<CodeScannerView>(R.id.scanner_view)
-
+        val scanResult: String = getString(R.string.scanResult)
         codeScanner = CodeScanner(this, scannerView)
 
         // Parameters (default values)
@@ -39,7 +39,7 @@ class QRActivity : AppCompatActivity() {
         // Callbacks
         codeScanner.decodeCallback = DecodeCallback {
             runOnUiThread {
-                Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, scanResult + "${it.text}", Toast.LENGTH_LONG).show()
             }
         }
         codeScanner.errorCallback = ErrorCallback { // or ErrorCallback.SUPPRESS
@@ -68,7 +68,7 @@ class QRActivity : AppCompatActivity() {
             // Requesting the permission
             ActivityCompat.requestPermissions(this@QRActivity, arrayOf(permission), requestCode)
         } else {
-            Toast.makeText(this@QRActivity, "Permission already granted", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@QRActivity, (R.string.permissionAlready), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -79,9 +79,9 @@ class QRActivity : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == CAMERA_PERMISSION_CODE) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this@QRActivity, "Camera Permission Granted", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@QRActivity, (R.string.cameraPGranted), Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this@QRActivity, "Camera Permission Denied", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@QRActivity, (R.string.cameraPDenied), Toast.LENGTH_SHORT).show()
             }
         }
     }
