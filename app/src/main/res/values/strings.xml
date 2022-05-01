@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Triland</string>
+    <string name="place_holder_time">00:00:00</string>
+    <string name="reset">Reiniciar</string>
+    <string name="start">Empezar</string>
+    <string name="stop">Parar</string>
+    <string name="prefs_file">com.luisgb.triland.PREFERENCE_FILE_KEY</string>
+</resources>

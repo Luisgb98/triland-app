@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlueTriland"
+    tools:context=".AllAppActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/trainingActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_sports"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="Entrenamiento"
+                    android:textColor="@color/darkBlueTriland" />
+
+                <Button
+                    android:id="@+id/dailyActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_library"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Actualización diaria"
+                    android:textColor="@color/darkBlueTriland" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/membershipActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_login"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Darse de alta"
+                    android:textColor="@color/darkBlueTriland" />
+
+                <Button
+                    android:id="@+id/facilitiesActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_map"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Instalaciones"
+                    android:textColor="@color/darkBlueTriland" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/qrActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_qr"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Lector QR"
+                    android:textColor="@color/darkBlueTriland" />
+
+                <Button
+                    android:id="@+id/shopActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_shopping"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Tienda"
+                    android:textColor="@color/darkBlueTriland" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/rankingActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_star"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Ranking"
+                    android:textColor="@color/darkBlueTriland" />
+
+                <Button
+                    android:id="@+id/calculatorActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_calculate"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Calculadora"
+                    android:textColor="@color/darkBlueTriland" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/chronoActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_watch"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Cronómetro"
+                    android:textColor="@color/darkBlueTriland" />
+
+                <Button
+                    android:id="@+id/profileActButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="@color/silverTriland"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawableTint="@color/darkBlueTriland"
+                    android:text="Mi perfil"
+                    android:textColor="@color/darkBlueTriland" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

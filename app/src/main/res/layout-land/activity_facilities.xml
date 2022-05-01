@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacilitiesActivity"
+    android:background="@color/darkBlueTriland"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/custom_box"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nuestras instalaciones se encuentran en
+la calle de la Morona en Morón de la Frontera."
+                    android:textSize="14dp"
+                    android:textColor="@color/darkBlueTriland"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/custom_box"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zona de entrenamiento personal"
+                    android:textSize="14dp"
+                    android:textColor="@color/darkBlueTriland"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym2"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym3"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym4"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym5"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym6"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/custom_box"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zona de entrenamiento libre"
+                    android:textSize="14dp"
+                    android:textColor="@color/darkBlueTriland"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym7"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym9"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym10"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym11"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="220dp"
+                        android:layout_height="170dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gym12"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
