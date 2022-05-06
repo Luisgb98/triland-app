@@ -23,36 +23,36 @@
                 android:layout_marginTop="50px"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/silverTriland"
-                android:drawableLeft="@drawable/ic_sports"
+                android:drawableLeft="@drawable/ic_fitness"
                 android:drawableTint="@color/darkBlueTriland"
                 android:hapticFeedbackEnabled="false"
                 android:text="@string/train"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
-                android:id="@+id/dailyActButton"
+                android:id="@+id/professionalActButton"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/silverTriland"
-                android:drawableLeft="@drawable/ic_library"
+                android:drawableLeft="@drawable/ic_people"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="@string/daily"
+                android:text="@string/professionals"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
-                android:id="@+id/membershipActButton"
+                android:id="@+id/formActButton"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/silverTriland"
-                android:drawableLeft="@drawable/ic_login"
+                android:drawableLeft="@drawable/ic_contact"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="@string/membership"
+                android:text="@string/form"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button
@@ -79,32 +79,6 @@
                 android:drawableLeft="@drawable/ic_qr"
                 android:drawableTint="@color/darkBlueTriland"
                 android:text="@string/qr"
-                android:textColor="@color/darkBlueTriland" />
-
-            <Button
-                android:id="@+id/shopActButton"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10dp"
-                android:backgroundTint="@color/silverTriland"
-                android:drawableLeft="@drawable/ic_shopping"
-                android:drawableTint="@color/darkBlueTriland"
-                android:text="@string/shop"
-                android:textColor="@color/darkBlueTriland" />
-
-            <Button
-                android:id="@+id/rankingActButton"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10dp"
-                android:backgroundTint="@color/silverTriland"
-                android:drawableLeft="@drawable/ic_star"
-                android:drawableTint="@color/darkBlueTriland"
-                android:text="@string/ranking"
                 android:textColor="@color/darkBlueTriland" />
 
             <Button

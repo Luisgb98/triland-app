@@ -31,22 +31,22 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="15dp"
                     android:backgroundTint="@color/silverTriland"
-                    android:drawableLeft="@drawable/ic_sports"
+                    android:drawableLeft="@drawable/ic_fitness"
                     android:drawableTint="@color/darkBlueTriland"
                     android:hapticFeedbackEnabled="false"
                     android:text="@string/train"
                     android:textColor="@color/darkBlueTriland" />
 
                 <Button
-                    android:id="@+id/dailyActButton"
+                    android:id="@+id/professionalActButton"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="15dp"
                     android:backgroundTint="@color/silverTriland"
-                    android:drawableLeft="@drawable/ic_library"
+                    android:drawableLeft="@drawable/ic_people"
                     android:drawableTint="@color/darkBlueTriland"
-                    android:text="@string/daily"
+                    android:text="@string/professionals"
                     android:textColor="@color/darkBlueTriland" />
             </LinearLayout>
 
@@ -59,15 +59,15 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/membershipActButton"
+                    android:id="@+id/formActButton"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginRight="15dp"
                     android:backgroundTint="@color/silverTriland"
-                    android:drawableLeft="@drawable/ic_login"
+                    android:drawableLeft="@drawable/ic_contact"
                     android:drawableTint="@color/darkBlueTriland"
-                    android:text="@string/membership"
+                    android:text="@string/form"
                     android:textColor="@color/darkBlueTriland" />
 
                 <Button
@@ -104,39 +104,6 @@
                     android:textColor="@color/darkBlueTriland" />
 
                 <Button
-                    android:id="@+id/shopActButton"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:backgroundTint="@color/silverTriland"
-                    android:drawableLeft="@drawable/ic_shopping"
-                    android:drawableTint="@color/darkBlueTriland"
-                    android:text="@string/shop"
-                    android:textColor="@color/darkBlueTriland" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/rankingActButton"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="15dp"
-                    android:backgroundTint="@color/silverTriland"
-                    android:drawableLeft="@drawable/ic_star"
-                    android:drawableTint="@color/darkBlueTriland"
-                    android:text="@string/ranking"
-                    android:textColor="@color/darkBlueTriland" />
-
-                <Button
                     android:id="@+id/calculatorActButton"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
@@ -147,6 +114,7 @@
                     android:drawableTint="@color/darkBlueTriland"
                     android:text="@string/calculator"
                     android:textColor="@color/darkBlueTriland" />
+
             </LinearLayout>
 
             <LinearLayout

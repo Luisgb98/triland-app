@@ -3,9 +3,9 @@ package com.luisgb.triland
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MembershipActivity : AppCompatActivity() {
+class FormActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_membership)
+        setContentView(R.layout.activity_form)
     }
 }

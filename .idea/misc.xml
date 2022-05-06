@@ -11,6 +11,7 @@
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/custom_input_white.xml" value="0.4265" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/custom_text.xml" value="0.4265" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/fondo.xml" value="0.4265" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/ic_assignment.xml" value="0.511" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/ic_calculate.xml" value="0.4265" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/ic_email.xml" value="0.4265" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.32" />
@@ -24,21 +25,23 @@
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/ic_triland_logo.xml" value="0.4265" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/splash_screen.xml" value="0.4265" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/drawable/splashscreen.xml" value="0.4265" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout-land/activity_all_app.xml" value="0.1" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout-land/activity_all_app.xml" value="0.7016534867002157" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout-land/activity_calculator.xml" value="0.1" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout-land/activity_facilities.xml" value="0.4203125" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout-land/activity_profile.xml" value="0.1" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_all_app.xml" value="0.1" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_calculator.xml" value="0.1" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_chronometer.xml" value="0.1" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_facilities.xml" value="0.1" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_forgot_pass.xml" value="0.1" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_all_app.xml" value="0.5" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_calculator.xml" value="1.0" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_chronometer.xml" value="1.0" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_facilities.xml" value="0.67" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_forgot_pass.xml" value="1.0" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_form.xml" value="0.559375" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_home.xml" value="0.559375" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_main.xml" value="0.559375" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_professional.xml" value="0.5453125" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_profile.xml" value="0.559666492965086" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_qractivity.xml" value="0.559375" />
-        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_register.xml" value="1.0" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_shop.xml" value="0.559375" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/activity_training.xml" value="0.559375" />
         <entry key="..\:/Users/Luis/Documents/1. Grado Superior DAM/Cuarto semestre/Triland App/app/src/main/res/layout/content_timer.xml" value="0.559375" />

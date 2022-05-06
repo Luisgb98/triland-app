@@ -6,8 +6,8 @@
     <string name="start">Empezar</string>
     <string name="stop">Detener</string>
     <string name="train">Entrenamiento</string>
-    <string name="daily">Actualización diaria</string>
-    <string name="membership">Darse de alta</string>
+    <string name="professionals">Profesionales</string>
+    <string name="form">Contacto</string>
     <string name="facilities">Instalaciones</string>
     <string name="qr">Lector QR</string>
     <string name="shop">Tienda</string>
@@ -71,5 +71,6 @@
     <string name="cameraPDenied">Permiso de cámara denegado</string>
     <string name="registerSuccessful">Te has registrado correctamente</string>
     <string name="enterDataCorrect">Introduce todos los datos correctamente</string>
+    <string name="message">Mensaje</string>
 
 </resources>

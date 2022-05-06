@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkBlueTriland"
+    tools:context=".FormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/custom_box"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/email"
+                android:textColor="@color/darkBlueTriland"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_input"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:textColor="@color/silverTriland"
+                android:textColorHint="@color/silverTriland"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/surnameTextView"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textColor="@color/darkBlueTriland"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/surnameEditText"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_input"
+                android:gravity="center"
+                android:hint="@string/name"
+                android:textColor="@color/silverTriland"
+                android:textColorHint="@color/silverTriland"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/phoneTextView"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/message"
+                android:textColor="@color/darkBlueTriland"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="250dp"
+                android:layout_height="130dp"
+                android:background="@drawable/custom_input"
+                android:gravity="center"
+                android:hint="@string/message"
+                android:textColor="@color/silverTriland"
+                android:textColorHint="@color/silverTriland"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/silverTriland"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawableTint="@color/darkBlueTriland"
+                android:text="@string/changeData"
+                android:textColor="@color/darkBlueTriland" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

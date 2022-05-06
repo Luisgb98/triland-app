@@ -15,14 +15,14 @@ class AllAppActivity : AppCompatActivity() {
             startActivity(Intent(this@AllAppActivity, TrainingActivity::class.java))
         }
 
-        dailyActButton.setOnClickListener {
+        professionalActButton.setOnClickListener {
 
-            startActivity(Intent(this@AllAppActivity, DailyActivity::class.java))
+            startActivity(Intent(this@AllAppActivity, ProfessionalActivity::class.java))
         }
 
-        membershipActButton.setOnClickListener {
+        formActButton.setOnClickListener {
 
-            startActivity(Intent(this@AllAppActivity, MembershipActivity::class.java))
+            startActivity(Intent(this@AllAppActivity, FormActivity::class.java))
         }
 
         facilitiesActButton.setOnClickListener {
@@ -33,16 +33,6 @@ class AllAppActivity : AppCompatActivity() {
         qrActButton.setOnClickListener {
 
             startActivity(Intent(this@AllAppActivity, QRActivity::class.java))
-        }
-
-        shopActButton.setOnClickListener {
-
-            startActivity(Intent(this@AllAppActivity, ShopActivity::class.java))
-        }
-
-        rankingActButton.setOnClickListener {
-
-            startActivity(Intent(this@AllAppActivity, RankingActivity::class.java))
         }
 
         calculatorActButton.setOnClickListener {
