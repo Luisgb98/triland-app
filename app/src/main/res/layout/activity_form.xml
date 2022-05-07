@@ -24,7 +24,7 @@
             android:layout_marginBottom="20dp">
 
             <TextView
-                android:id="@+id/nameTextView"
+                android:id="@+id/emailTextView"
                 android:layout_width="250dp"
                 android:layout_height="30dp"
                 android:gravity="center"
@@ -33,7 +33,7 @@
                 android:textSize="14dp"/>
 
             <EditText
-                android:id="@+id/nameEditText"
+                android:id="@+id/emailET"
                 android:layout_width="250dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="10dp"
@@ -45,7 +45,7 @@
                 android:textSize="14dp"/>
 
             <TextView
-                android:id="@+id/surnameTextView"
+                android:id="@+id/nameTV"
                 android:layout_width="250dp"
                 android:layout_height="30dp"
                 android:gravity="center"
@@ -54,7 +54,7 @@
                 android:textSize="14dp"/>
 
             <EditText
-                android:id="@+id/surnameEditText"
+                android:id="@+id/nameET"
                 android:layout_width="250dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="10dp"
@@ -66,7 +66,7 @@
                 android:textSize="14dp"/>
 
             <TextView
-                android:id="@+id/phoneTextView"
+                android:id="@+id/messageTV"
                 android:layout_width="250dp"
                 android:layout_height="30dp"
                 android:gravity="center"
@@ -75,12 +75,13 @@
                 android:textSize="14dp"/>
 
             <EditText
-                android:id="@+id/phoneEditText"
+                android:id="@+id/messageET"
                 android:layout_width="250dp"
                 android:layout_height="130dp"
                 android:background="@drawable/custom_input"
-                android:gravity="center"
+                android:gravity="top"
                 android:hint="@string/message"
+                android:padding="5dp"
                 android:textColor="@color/silverTriland"
                 android:textColorHint="@color/silverTriland"
                 android:textSize="14dp" />
@@ -101,7 +102,7 @@
                 android:backgroundTint="@color/silverTriland"
                 android:drawableLeft="@drawable/ic_edit"
                 android:drawableTint="@color/darkBlueTriland"
-                android:text="@string/changeData"
+                android:text="@string/send"
                 android:textColor="@color/darkBlueTriland" />
 
         </LinearLayout>
