@@ -20,11 +20,11 @@
     <string name="female">Female</string>
     <string name="male">Male</string>
     <string name="weightKG">Weight (in Kg):</string>
-    <string name="weight">Weight</string>
+    <string name="weight">Enter your weight</string>
     <string name="heightCM">Height (in cm):</string>
-    <string name="height">Height</string>
+    <string name="height">Enter your height</string>
     <string name="ageTV">Age:</string>
-    <string name="age">Age</string>
+    <string name="age">Enter your age</string>
     <string name="imcTV">BMI: </string>
     <string name="fat">Body fat: </string>
     <string name="calculate">Calculate</string>
@@ -72,5 +72,11 @@
     <string name="registerSuccessful">You have successfully registered</string>
     <string name="enterDataCorrect">Enter all the data correctly, please</string>
     <string name="message">Message</string>
+    <string name="nameET">Enter your name</string>
+    <string name="messageET">Enter your message</string>
+    <string name="passET">Enter your password</string>
+    <string name="surnameET">Enter your surname</string>
+    <string name="adressET">Enter your adress</string>
+    <string name="phoneET">Enter your phone</string>
 
 </resources>

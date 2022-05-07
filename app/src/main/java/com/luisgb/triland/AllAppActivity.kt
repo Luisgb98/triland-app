@@ -1,8 +1,8 @@
 package com.luisgb.triland
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_all_app.*
 
 class AllAppActivity : AppCompatActivity() {
@@ -10,6 +10,10 @@ class AllAppActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_all_app)
 
+        setupButtons()
+    }
+
+    private fun setupButtons() {
         trainingActButton.setOnClickListener {
 
             startActivity(Intent(this@AllAppActivity, TrainingActivity::class.java))
@@ -49,6 +53,5 @@ class AllAppActivity : AppCompatActivity() {
 
             startActivity(Intent(this@AllAppActivity, ProfileActivity::class.java))
         }
-
     }
 }

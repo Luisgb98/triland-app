@@ -1,9 +1,9 @@
 package com.luisgb.triland
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -33,7 +33,7 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun data() {
         if (user != null) {
-            emailTextView.setText(user.email)
+            emailTextView.text = user.email
             getData()
         }
     }
@@ -84,19 +84,21 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun getData() {
         db.collection("users").document(user!!.email!!).get().addOnSuccessListener {
-            nameTextView.setText(it.get("name") as String?)
-            surnameTextView.setText(it.get("surname") as String?)
-            adressTextView.setText(it.get("adress") as String?)
-            phoneTextView.setText(it.get("phone") as String?)
+            nameTextView.text = it.get("name") as String?
+            surnameTextView.text = it.get("surname") as String?
+            adressTextView.text = it.get("adress") as String?
+            phoneTextView.text = it.get("phone") as String?
         }
     }
 
     private fun setData() {
         db.collection("users").document(user!!.email!!).set(
-            hashMapOf("name" to nameEditText.text.toString(),
+            hashMapOf(
+                "name" to nameEditText.text.toString(),
                 "surname" to surnameEditText.text.toString(),
                 "phone" to phoneEditText.text.toString(),
-                "adress" to adressEditText.text.toString())
+                "adress" to adressEditText.text.toString()
+            )
         )
     }
 

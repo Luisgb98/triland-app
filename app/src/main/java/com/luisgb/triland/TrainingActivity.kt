@@ -1,7 +1,7 @@
 package com.luisgb.triland
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.davemorrissey.labs.subscaleview.ImageSource
 import kotlinx.android.synthetic.main.activity_training.*
 

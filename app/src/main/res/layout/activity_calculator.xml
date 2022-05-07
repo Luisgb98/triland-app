@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/darkBlueTriland"
-    tools:context=".CalculatorActivity"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CalculatorActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
         android:background="@drawable/custom_box"
+        android:gravity="center"
+        android:orientation="vertical"
         android:padding="20dp">
 
         <LinearLayout
@@ -29,10 +28,9 @@
                 android:gravity="center"
                 android:text="@string/fatCalculator"
                 android:textColor="@color/darkBlueTriland"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
-
 
 
         <LinearLayout
@@ -46,8 +44,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/gender"
-                android:textSize="16dp"
-                android:textColor="@color/darkBlueTriland" />
+                android:textColor="@color/darkBlueTriland"
+                android:textSize="16dp" />
 
             <RadioGroup
                 android:id="@+id/genderRG"
@@ -61,19 +59,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@color/darkBlueTriland"
                     android:text="@string/female"
                     android:textColor="@color/darkBlueTriland"
-                    android:textSize="14dp"
-                    android:buttonTint="@color/darkBlueTriland" />
+                    android:textSize="14dp" />
 
                 <RadioButton
                     android:id="@+id/manRB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@color/darkBlueTriland"
                     android:text="@string/male"
-                    android:textColor="@color/darkBlueTriland"
-                    android:buttonTint="@color/darkBlueTriland"/>
+                    android:textColor="@color/darkBlueTriland" />
             </RadioGroup>
 
         </LinearLayout>
@@ -81,108 +79,108 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="@string/weightKG"
             android:textColor="@color/darkBlueTriland"
-            android:textSize="14dp"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="14dp" />
 
         <EditText
             android:id="@+id/weightET"
             android:layout_width="250dp"
             android:layout_height="30dp"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_input_white"
             android:ems="10"
+            android:gravity="center"
             android:hint="@string/weight"
             android:inputType="numberDecimal"
             android:textColor="@color/darkBlueTriland"
-            android:textColorHint="@color/darkBlueTriland"
-            android:background="@drawable/custom_input_white"
-            android:gravity="center"/>
+            android:textColorHint="@color/darkBlueTriland" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="@string/heightCM"
             android:textColor="@color/darkBlueTriland"
-            android:textSize="14dp"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="14dp" />
 
         <EditText
             android:id="@+id/heightET"
             android:layout_width="250dp"
             android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_input_white"
             android:ems="10"
+            android:gravity="center"
             android:hint="@string/height"
             android:inputType="numberDecimal"
-            android:layout_marginBottom="10dp"
             android:textColor="@color/darkBlueTriland"
-            android:textColorHint="@color/darkBlueTriland"
-            android:background="@drawable/custom_input_white"
-            android:gravity="center"/>
+            android:textColorHint="@color/darkBlueTriland" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="@string/ageTV"
             android:textColor="@color/darkBlueTriland"
-            android:textSize="14dp"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="14dp" />
 
         <EditText
             android:id="@+id/ageET"
             android:layout_width="250dp"
             android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_input_white"
             android:ems="2"
+            android:gravity="center"
             android:hint="@string/age"
             android:inputType="number"
-            android:layout_marginBottom="10dp"
             android:textColor="@color/darkBlueTriland"
-            android:textColorHint="@color/darkBlueTriland"
-            android:background="@drawable/custom_input_white"
-            android:gravity="center"/>
+            android:textColorHint="@color/darkBlueTriland" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
+            android:orientation="horizontal">
 
 
             <TextView
                 android:id="@+id/BMITV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:text="@string/imcTV"
                 android:textColor="@color/darkBlueTriland"
-                android:textSize="14dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/BMITVResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:text="0"
-                android:visibility="gone"
                 android:textColor="@color/darkBlueTriland"
                 android:textSize="14dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/statusTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:text="0"
-                android:visibility="gone"
                 android:textColor="@color/darkBlueTriland"
                 android:textSize="14dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -196,22 +194,22 @@
                 android:id="@+id/fatTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:text="@string/fat"
                 android:textColor="@color/darkBlueTriland"
-                android:textSize="14dp"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/fatTVResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:text="0"
-                android:visibility="gone"
                 android:textColor="@color/darkBlueTriland"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:visibility="gone" />
 
         </LinearLayout>
 

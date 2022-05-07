@@ -19,8 +19,8 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="4dp"
+                android:layout_marginTop="30dp"
                 android:src="@drawable/logo" />
 
         </FrameLayout>
@@ -35,7 +35,7 @@
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="12dp"
             android:drawableTint="@color/silverTriland"
-            android:hint="@string/user"
+            android:hint="@string/emailET"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:paddingLeft="10dp"
@@ -45,7 +45,7 @@
             android:textColorHighlight="@color/silverTriland"
             android:textColorHint="@color/silverTriland"
             android:textColorLink="@color/silverTriland"
-            android:textSize="14dp"/>
+            android:textSize="14dp" />
 
         <EditText
             android:id="@+id/login_pass"
@@ -56,7 +56,7 @@
             android:drawableStart="@drawable/ic_lock"
             android:drawablePadding="12dp"
             android:drawableTint="@color/silverTriland"
-            android:hint="@string/pass"
+            android:hint="@string/passET"
             android:inputType="textPassword"
             android:maxLines="1"
             android:paddingLeft="10dp"
@@ -65,7 +65,7 @@
             android:textColor="@color/silverTriland"
             android:textColorHighlight="@color/silverTriland"
             android:textColorHint="@color/silverTriland"
-            android:textSize="14dp"/>
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/olvidarTextView"

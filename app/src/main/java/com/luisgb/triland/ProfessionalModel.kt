@@ -8,7 +8,7 @@ data class ProfessionalModel(
     val description: String,
     val image: String
 ) {
-    constructor():this(
+    constructor() : this(
         "",
         "",
         "",

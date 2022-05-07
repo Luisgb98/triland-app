@@ -1,17 +1,21 @@
 package com.luisgb.triland
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_calculator.*
-import kotlin.properties.Delegates
 
 
 class CalculatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
+
+        calculate()
+    }
+
+    private fun calculate() {
 
         val lowWeight: String = getString(R.string.lowWeight)
         val healthy: String = getString(R.string.healthy)
@@ -20,13 +24,13 @@ class CalculatorActivity : AppCompatActivity() {
 
         calculatorButton.setOnClickListener {
 
-            // Check if the height EditText and Weight EditText are not empty
+            // Comprobamos que el usuario ha introducido los datos
             if (heightET.text.isNotEmpty() && weightET.text.isNotEmpty()) {
                 val height = (heightET.text.toString()).toInt()
                 val weight = (weightET.text.toString()).toInt()
                 val age = (ageET.text.toString()).toInt()
 
-                // calculateBMI will return BMI
+                // Realizamos ambos calculos
                 val BMI = calculateBMI(height, weight)
                 val BF = calculateBF(height, weight, age)
 
@@ -36,7 +40,6 @@ class CalculatorActivity : AppCompatActivity() {
                 fatTVResult.text = "%.2f".format(BF) + "%"
                 fatTVResult.visibility = View.VISIBLE
 
-                // update the status text as per the bmi conditions
                 if (BMI < 18.5) {
                     statusTV.text = lowWeight
                 } else if (BMI >= 18.5 && BMI < 24.9) {
@@ -55,18 +58,16 @@ class CalculatorActivity : AppCompatActivity() {
 
             }
 
-            // when either Weight EditText or
-            // height EditText have null value
-            // we will display toast.
+            // Si el usuario no ha introducido bien los datos, salta un error.
             else {
                 Toast.makeText(this, (R.string.insertData), Toast.LENGTH_SHORT).show()
             }
         }
 
+        //Reiniciamos todos los datos al pulsar el botón
         reCalculateButton.setOnClickListener {
             ResetEverything()
         }
-
     }
 
     // Function to reset all Text and EditText fields.
@@ -95,7 +96,7 @@ class CalculatorActivity : AppCompatActivity() {
         return BMI
     }
 
-    private fun calculateBF (height: Int, weight: Int, age: Int): Double {
+    private fun calculateBF(height: Int, weight: Int, age: Int): Double {
 
         val Height_in_metre = height.toFloat() / 100
         val BMI = weight.toFloat() / (Height_in_metre * Height_in_metre)
@@ -103,9 +104,9 @@ class CalculatorActivity : AppCompatActivity() {
 
         if (genderRG.checkedRadioButtonId == -1) {
             Toast.makeText(this, (R.string.setGender), Toast.LENGTH_SHORT).show()
-        }else if (womanRB.isChecked){
+        } else if (womanRB.isChecked) {
             BF = (1.2 * BMI) + (0.23 * age) - 5.4
-        }else if (manRB.isChecked){
+        } else if (manRB.isChecked) {
             BF = (1.2 * BMI) + (0.23 * age) - 10.8 - 5.4
         }
 

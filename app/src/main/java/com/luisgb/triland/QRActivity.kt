@@ -3,12 +3,11 @@ package com.luisgb.triland
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.budiyev.android.codescanner.*
-import com.google.android.gms.common.util.CollectionUtils.listOf
 import com.google.zxing.BarcodeFormat
 
 
@@ -26,15 +25,12 @@ class QRActivity : AppCompatActivity() {
         val scanResult: String = getString(R.string.scanResult)
         codeScanner = CodeScanner(this, scannerView)
 
-        // Parameters (default values)
-        codeScanner.camera = CodeScanner.CAMERA_BACK // or CAMERA_FRONT or specific camera id
-        codeScanner.formats = mutableListOf(BarcodeFormat.QR_CODE) // list of type BarcodeFormat,
-        // codeScanner.formats = listOf(BarcodeFormat.QR_CODE) DEPRECATED
-        // ex. listOf(BarcodeFormat.QR_CODE)
-        codeScanner.autoFocusMode = AutoFocusMode.SAFE // or CONTINUOUS
-        codeScanner.scanMode = ScanMode.SINGLE // or CONTINUOUS or PREVIEW
-        codeScanner.isAutoFocusEnabled = true // Whether to enable auto focus or not
-        codeScanner.isFlashEnabled = false // Whether to enable flash or not
+        codeScanner.camera = CodeScanner.CAMERA_BACK // Especificamos la cámara trasera
+        codeScanner.formats = mutableListOf(BarcodeFormat.QR_CODE) // Lista de tipos de códigos
+        codeScanner.autoFocusMode = AutoFocusMode.SAFE // Autofocus puesto
+        codeScanner.scanMode = ScanMode.SINGLE // Escanaa una vez y da el resultado
+        codeScanner.isAutoFocusEnabled = true // El autofocus esta activado al iniciar el lector
+        codeScanner.isFlashEnabled = false // El flash esta desactivado al iniciar el lector
 
         // Callbacks
         codeScanner.decodeCallback = DecodeCallback {
@@ -62,24 +58,31 @@ class QRActivity : AppCompatActivity() {
         super.onPause()
     }
 
-    // Function to check and request permission.
+    // Comprobamos los permisos
     private fun checkPermission(permission: String, requestCode: Int) {
-        if (ContextCompat.checkSelfPermission(this@QRActivity, permission) == PackageManager.PERMISSION_DENIED) {
-            // Requesting the permission
+        if (ContextCompat.checkSelfPermission(
+                this@QRActivity,
+                permission
+            ) == PackageManager.PERMISSION_DENIED
+        ) {
+            // Pedimos al usuario que nos de los permisos correspondientes
             ActivityCompat.requestPermissions(this@QRActivity, arrayOf(permission), requestCode)
         } else {
             Toast.makeText(this@QRActivity, (R.string.permissionAlready), Toast.LENGTH_SHORT).show()
         }
     }
 
-    // This function is called when the user accepts or decline the permission.
-    // Request Code is used to check which permission called this function.
-    // This request code is provided when the user is prompt for permission.
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+    // Esta función se activa cuando el usuario permite o deniega los permisos
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<String>,
+        grantResults: IntArray
+    ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == CAMERA_PERMISSION_CODE) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this@QRActivity, (R.string.cameraPGranted), Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@QRActivity, (R.string.cameraPGranted), Toast.LENGTH_SHORT)
+                    .show()
             } else {
                 Toast.makeText(this@QRActivity, (R.string.cameraPDenied), Toast.LENGTH_SHORT).show()
             }

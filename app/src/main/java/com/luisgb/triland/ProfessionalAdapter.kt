@@ -14,7 +14,7 @@ class ProfessionalAdapter(
     val professionals: ArrayList<ProfessionalModel>
 ) : RecyclerView.Adapter<ProfessionalAdapter.ViewHolder>() {
 
-    class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val email: TextView = itemView.findViewById(R.id.emailRecycler)
         val name: TextView = itemView.findViewById(R.id.nameRecycler)
         val surname: TextView = itemView.findViewById(R.id.surnameRecycler)
@@ -25,12 +25,13 @@ class ProfessionalAdapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.recycler_layout, parent, false)
+        var view =
+            LayoutInflater.from(parent.context).inflate(R.layout.recycler_layout, parent, false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val currentItem : ProfessionalModel = professionals[position]
+        val currentItem: ProfessionalModel = professionals[position]
 
         Glide.with(context).load(currentItem.image).into(holder.image)
 
